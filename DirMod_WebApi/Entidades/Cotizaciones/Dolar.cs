@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DirMod_WebApi.Entidades
 {
-    [Atributos.CambioTodayAttribute("USD")]
+    [Atributos.CambioTodayMonedaAttribute("USD")]
     public class Dolar : Base.Moneda
     {
         public Dolar()

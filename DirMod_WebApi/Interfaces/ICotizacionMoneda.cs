@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DirMod_WebApi.Interfaces
 {
-    public interface ICotizacion
+    public interface ICotizacionMoneda
     {
         string moneda { get; }
         string precio { get; set; }
         string GetCotizacion();
-        string GetCodigoCotizacion<T>() where T : CodigoCotizacionAttribute;
+        string GetCodigoCotizacion<T>() where T : CodigoMonedaAttribute;
     }
 }

@@ -10,10 +10,10 @@ namespace DirMod_WebApi.Helpers
 {
     public class CotizacionContext
     {
-        private Interfaces.ICotizacion Cotizacion;
-        private Interfaces.ICotizadorAPI Cotizador;
+        private Interfaces.ICotizacionMoneda Cotizacion;
+        private Interfaces.IProveedorCotizacion Cotizador;
 
-        public CotizacionContext(Interfaces.ICotizacion cotizacion, Interfaces.ICotizadorAPI cotizador)
+        public CotizacionContext(Interfaces.ICotizacionMoneda cotizacion, Interfaces.IProveedorCotizacion cotizador)
         {
             this.Cotizacion = cotizacion;
             this.Cotizador = cotizador;
@@ -21,7 +21,9 @@ namespace DirMod_WebApi.Helpers
 
         public string GetCotizacion()
         {
+            /*Obtengo la cotización*/
             var result = Cotizador.ObtenerCotizacion(Cotizacion);
+            /*Convierto el resultado de Double a String*/
             Cotizacion.precio = result.ToString(CultureInfo.CurrentUICulture);
             
             return Cotizacion.GetCotizacion();

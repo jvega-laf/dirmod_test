@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DirMod_WebApi.Entidades
 {
-    [Atributos.CambioTodayAttribute("BRL")]
+    [Atributos.CambioTodayMonedaAttribute("BRL")]
     public class Real : Base.Moneda
     {
         public Real()

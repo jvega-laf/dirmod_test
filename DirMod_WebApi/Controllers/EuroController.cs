@@ -20,6 +20,7 @@ namespace DirMod_WebApi.Controllers
                     new Entidades.Euro(), 
                     new Helpers.CambioTodayCotizador(new Helpers.HttpCliente())
                     );
+
                 var cotizacion = context.GetCotizacion();
                 return cotizacion;
             }

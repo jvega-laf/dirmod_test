@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DirMod_WebApi.Interfaces
 {
-    public interface IServicio
+    public interface IServicioConexion
     {
         string Get(string url, Dictionary<string, string> parametros);
     }

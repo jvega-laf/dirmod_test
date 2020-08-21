@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DirMod_WebApi.Helpers
 {
-    internal class HttpCliente : Interfaces.IServicio
+    internal class HttpCliente : Interfaces.IServicioConexion
     {
         private static string ConcatParams(Dictionary<string,string> parameters)
         {

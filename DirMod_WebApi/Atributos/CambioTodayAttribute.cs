@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace DirMod_WebApi.Atributos
+{
+    public class CambioTodayAttribute : Base.CodigoCotizacionAttribute
+    {
+        public CambioTodayAttribute(string codigoCotizacion) : base(codigoCotizacion)
+        {
+            CodigoCotizacion = codigoCotizacion;
+        }
+    }
+}

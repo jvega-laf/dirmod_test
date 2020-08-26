@@ -8,6 +8,7 @@
     <SpaRoot>ClientApp\</SpaRoot>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
     <Authors>José Emanuel Vega</Authors>
+    <UserSecretsId>4fa184e8-8a68-445d-bb55-48645dd862ab</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
